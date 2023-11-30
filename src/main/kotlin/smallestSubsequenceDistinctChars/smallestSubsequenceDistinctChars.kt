@@ -1,7 +1,7 @@
 package smallestSubsequenceDistinctChars
+//  https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/
 
 fun smallestSubsequence(s: String): String {
-    val alphabet = s.toSet().sorted()
-    println(alphabet)
+    val alphabet = s.toSet()
     return ""
 }

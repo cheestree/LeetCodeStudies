@@ -1,6 +1,5 @@
 package zigZagConversion
-
-import kotlin.math.pow
+//  https://leetcode.com/problems/zigzag-conversion/
 
 fun convert(s: String, numRows: Int): String {
     if(numRows==1 || numRows >= s.length) return s

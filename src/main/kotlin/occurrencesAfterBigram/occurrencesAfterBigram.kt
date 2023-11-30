@@ -1,4 +1,5 @@
 package occurrencesAfterBigram
+//  https://leetcode.com/problems/occurrences-after-bigram/
 
 fun findOcurrences(text: String, first: String, second: String): Array<String> {
     val newText = text.split(" ")
