@@ -1,4 +1,4 @@
-package letterTilePossibilities
+package medium.letterTilePossibilities
 
 import medium.letterTilePossibilities.numTilePossibilities
 import kotlin.test.Test

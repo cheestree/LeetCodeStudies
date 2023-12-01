@@ -1,4 +1,8 @@
 package medium.divideTwoIntegers
+//  https://leetcode.com/problems/divide-two-integers/
+//  Many thanks to 'am-chourasia' for the explanation and solution
+//  (https://leetcode.com/problems/divide-two-integers/solutions/1516367/complete-thinking-process-intuitive-explanation-all-rules-followed-c-code/).
+//  The problem isn't great and the edge cases are more annoying than actually useful.
 
 import kotlin.math.abs
 

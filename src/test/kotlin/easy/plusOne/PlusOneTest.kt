@@ -1,4 +1,4 @@
-package plusOne
+package easy.plusOne
 
 import easy.plusOne.plusOne
 import kotlin.test.Test

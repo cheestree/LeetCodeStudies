@@ -1,19 +1,18 @@
 package medium.powxn
 //  https://leetcode.com/problems/powx-n/
 
+import java.math.BigDecimal
+import java.math.RoundingMode
 import kotlin.math.abs
-import kotlin.math.pow
 
 fun myPow(x: Double, n: Int): Double {
+    if(x==1.0) return x
+    if(x==-1.0 && n==Int.MAX_VALUE) return x
+    if(x==-1.0 && n==Int.MIN_VALUE) return -x
+    if(n==Int.MIN_VALUE || n==Int.MAX_VALUE) return 0.0
     var result = 1.0
     repeat(abs(n)) {
         result *= x
     }
-    return if (n >= 0) result.roundToDecimal(5) else 1 / result.roundToDecimal(5)
-}
-
-fun Double.roundToDecimal(exponent: Int): Double {
-    val base = 1
-    val result = base * 10.0.pow(exponent)
-    return (this * result).toLong() / result
+    return BigDecimal(if(n>=0) result else 1/result).setScale(5, RoundingMode.HALF_EVEN).toDouble()
 }
