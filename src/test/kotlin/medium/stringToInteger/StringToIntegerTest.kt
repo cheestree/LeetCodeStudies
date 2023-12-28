@@ -1,6 +1,5 @@
-package stringToInteger
+package medium.stringToInteger
 
-import medium.stringToInteger.myAtoi
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
